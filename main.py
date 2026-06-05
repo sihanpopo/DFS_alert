@@ -1,6 +1,6 @@
 import requests
 
-url = "https://www.ssgdfs.com/kr/goos/initDetailGoos?goos_cd=100618000150"
+url = "https://www.shilladfs.com/estore/kr/ko/p/5768726"
 
 response = requests.get(
     url,
@@ -14,8 +14,5 @@ html = response.text
 
 print("HTTP STATUS:", response.status_code)
 print("HTML LENGTH:", len(html))
-print("notiReqBtn FOUND:", "notiReqBtn" in html)
-
-print("\n===== HTML 시작 =====\n")
-print(html[:2000])
-print("\n===== HTML 끝 =====")
+print("requestRestockNotiBtn FOUND:", "requestRestockNotiBtn" in html)
+print(html[:1000])
